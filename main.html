@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>FightingGame</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            background-color: rgb(19, 180, 234); 
+             height:34px;padding: 15px;
+             display: flex;
+             align-items: center;
+             justify-content: center; 
+             position: absolute; 
+             right: 20px; 
+             top: 10px;
+             border: 2px solid white;
+             border-radius: 4px;
+             text-transform: capitalize;
+             font-size: large;
+             font-weight: 600;
+             
+             
+        }
+        button:hover{
+            background-color: rgb(104, 205, 238);
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+<div class="outerContainer" style="position: relative;">
+    <div class="innerContainer" >
+        
+        <div class="playerHealthContainer">
+            <div class="playerHealthBg"></div>
+            <div class="playerHealth"></div>
+        </div>
+
+        <div class="timer">80</div>
+
+        <div class="enemyHealthContainer">
+           <div class="enemyHealthBg"></div>
+           <div class="enemyHealth"></div>
+        </div>
+        <a href="index.html" ><button>instructions</button></a>
+     
+    </div>
+
+    <div class="result"></div>
+    <canvas></canvas>
+</div>
+
+<script src="js/utilis.js"></script>
+<script src="js/classes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

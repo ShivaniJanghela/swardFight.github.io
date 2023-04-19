@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outerContainer{
+position: relative;
+display: inline-block;
+}
+.innerContainer{
+position: absolute;
+display: flex;
+align-items: center;
+width: 100%;
+padding: 20px;
+}
+@media screen and (max-width:900px) {
+    .outerContainer{
+        width: 100vw;
+    }
+    
+}
+.playerHealthContainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    /* height: 30px; */
+    width: 100%;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
+border-left: 2px solid white;
+
+
+}
+.playerHealthBg{
+    background-color:wheat;
+    height: 30px;
+    width: 100%;
+}
+.playerHealth{
+    position:absolute;
+    background-color: rgb(27, 228, 27);
+    top:0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    }
+.enemyHealthContainer{
+position: relative;
+/* height: 30px; */
+width: 100%;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+
+
+}
+.enemyHealthBg{
+background-color: wheat;
+height: 30px;
+width: 100%;
+}
+.enemyHealth{
+position:absolute;
+background-color: rgb(27, 228, 27);
+top:0;
+bottom:0;
+left:0;
+right:0;
+}
+.timer{
+background-color: black;
+border: 2px solid white;
+height: 100px;
+width: 100px;
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: xx-large;
+font-weight: 800;
+color: white;
+}
+.result{
+    color: white;
+    /* border:50px white double; */
+    /* background-color: black; */
+    font-size: xx-large;
+    font-weight: 800;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
